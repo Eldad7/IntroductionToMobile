@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_2f10d9f28a0ecac44d5bb548fc31d02d5f237cea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_71fb9b10b228dbf090bed6885288586db7b02d0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_01f92e5570cd16df43d7b7e4aaae56d960848545.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_9faba3bd63a93244ee8bd8165774eb0f3caf3aca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_42ef49df4698764f2fd42205cb5e11992a8d491d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_ba39cb17bc3ca9a661a535f4aa89fa847ff77ee5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_19ed5bdb213e6f5e9b8534a67f47f555631ab7f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_326f8d3552e3bab9d40b3a7427833d86dcfbb712.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_0d4a0b8c2233863c593e787044b7612d05a89095.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_d3462d9e1c5434bfe2cb33ee7a4e49d0c62dbc01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_6580061d8d3c1c4e16dbf0e1a3eeabf4c65e83ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_9e55cba3d3bbce1a89a4c67a1b271c1bc7662aee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_ad2b0c237f83153b4022887c7b7198b4b8c32708.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_fbc042c1b52187dd0ce67c82ecd04be195b292de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_955bfb6346a17a3a55bbea062add41be9b38f68e.jar" />
+    </item>
+
+</items>
