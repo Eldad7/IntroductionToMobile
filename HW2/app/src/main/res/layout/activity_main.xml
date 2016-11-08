@@ -13,5 +13,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Welcome to Eldad's simple calculator"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter a number"
+        android:ems="7"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/firstNumber"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter a number"
+        android:ems="7"
+        android:id="@+id/secondNumber"
+        android:layout_alignBaseline="@+id/firstNumber"
+        android:layout_alignBottom="@+id/firstNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:text="Go!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/button"
+        android:onClick="Go"
+        android:layout_below="@+id/firstNumber"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
