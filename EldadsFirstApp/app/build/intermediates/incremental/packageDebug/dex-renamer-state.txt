@@ -1,4 +1,7 @@
-#Wed Nov 02 17:01:35 IST 2016
-base.0=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Mon Nov 07 17:14:09 IST 2016
+base.0=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9fe28198da5241c60c88145887382b32527f0f73
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_dd94a74f61d48a741aae21100be861a3c564b263\\classes.dex
+base.1=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_dd94a74f61d48a741aae21100be861a3c564b263
+file.0=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9fe28198da5241c60c88145887382b32527f0f73\\classes.dex

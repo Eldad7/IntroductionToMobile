@@ -1,4 +1,0 @@
-#Wed Nov 02 17:40:47 IST 2016
-base.0=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\eldadc\\Downloads\\GitProject\\IntroductionToMobile\\EldadsFirstApp\\app\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes.dex

@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void textDelete(View view) {
         editText.setText("");
     }
+
+
 }

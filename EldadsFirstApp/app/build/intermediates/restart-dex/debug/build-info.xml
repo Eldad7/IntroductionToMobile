@@ -1,37 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="23"
-    density="xxhdpi"
+    density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="72753201759866"
+    timestamp="508510228847738"
     token="-3826117079135842812"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="770" />
+        duration="151" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="325" />
+        duration="23" />
     <task
         name="verifier"
-        duration="77" />
+        duration="2" />
 
     <artifact
-        location="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="72753201759866"
+        timestamp="506202701206979"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="508510228847738"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\eldadc\Downloads\GitProject\IntroductionToMobile\EldadsFirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
