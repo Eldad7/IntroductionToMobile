@@ -8,17 +8,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="eldad.corem.exercises.lessonTwo"/>
-        <activity android:name="eldad.corem.exercises.calculate" />
+        <activity android:name=".lessonTwo" />
+        <activity android:name=".calculate" />
         <activity
-            android:name="eldad.corem.exercises.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lessonThree"></activity>
     </application>
 
 </manifest>

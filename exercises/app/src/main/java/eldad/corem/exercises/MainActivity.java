@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         list = (ListView) findViewById(R.id.list);
         ArrayItem[] hw = new ArrayItem[]{
                 new ArrayItem("HW#2: Simple Calculator", lessonTwo.class),
+                new ArrayItem("HW#3.a: ConstraintLayout", lessonThree.class),
         };
 
         ArrayAdapter<ArrayItem> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, hw);

@@ -14,8 +14,8 @@ public class calculate extends AppCompatActivity {
         setContentView(R.layout.activity_calculate);
         Intent intent = getIntent();
         Bundle b=intent.getExtras();
-        int[] results = b.getIntArray("mathOp");
-        int number = results[0] + results[1];
+        long[] results = b.getLongArray("mathOp");
+        long number = results[0] + results[1];
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(String.valueOf(number));

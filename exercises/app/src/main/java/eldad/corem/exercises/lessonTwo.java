@@ -18,14 +18,14 @@ public class lessonTwo extends AppCompatActivity {
     }
 
     public void Go(View view) {
-        int results[] = new int[2];
+        long results[] = new long[2];
         firstNum = (EditText) findViewById(R.id.firstNumber);
         secondNum = (EditText) findViewById(R.id.secondNumber);
         try {
-            results[0] = Integer.valueOf(firstNum.getText().toString());
-            results[1] = Integer.valueOf(secondNum.getText().toString());
+            results[0] = Long.valueOf(firstNum.getText().toString());
+            results[1] = Long.valueOf(secondNum.getText().toString());
             Bundle b = new Bundle();
-            b.putIntArray("mathOp", results);
+            b.putLongArray("mathOp", results);
             Intent intent = new Intent(this, calculate.class);
             intent.putExtras(b);
             startActivity(intent);
