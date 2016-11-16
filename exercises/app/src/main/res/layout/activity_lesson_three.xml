@@ -8,7 +8,7 @@
     tools:context="eldad.corem.exercises.lessonThree">
 
     <android.support.v7.widget.Toolbar
-        android:layout_width="74dp"
+        android:layout_width="82dp"
         android:layout_height="61dp"
         android:background="@color/violet"
         android:theme="?attr/actionBarStyle"
@@ -24,7 +24,8 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
-        android:text="violet"/>
+        app:subtitle="Violet"
+        app:subtitleTextColor="@android:color/black" />
 
     <android.support.v7.widget.Toolbar
         android:layout_width="15dp"
@@ -81,7 +82,7 @@
         app:layout_constraintLeft_toRightOf="@+id/toolbarOrange" />
 
     <android.support.v7.widget.Toolbar
-        android:layout_width="0.5dp"
+        android:layout_width="1dp"
         android:layout_height="61dp"
         android:background="@color/blue"
         android:theme="?attr/actionBarTheme"
@@ -94,7 +95,7 @@
         app:layout_constraintLeft_toRightOf="@+id/toolbarRed" />
 
     <android.support.v7.widget.Toolbar
-        android:layout_width="0.5dp"
+        android:layout_width="1dp"
         android:layout_height="61dp"
         android:background="@color/green"
         android:theme="?attr/actionBarTheme"

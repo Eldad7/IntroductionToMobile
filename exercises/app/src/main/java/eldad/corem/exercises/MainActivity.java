@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayItem[] hw = new ArrayItem[]{
                 new ArrayItem("HW#2: Simple Calculator", lessonTwo.class),
                 new ArrayItem("HW#3.a: ConstraintLayout", lessonThree.class),
+                new ArrayItem("HW#3.b: ConstraintLayout", lessonThreeB.class),
         };
 
         ArrayAdapter<ArrayItem> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, hw);
