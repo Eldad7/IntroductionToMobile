@@ -7,58 +7,57 @@
     android:layout_height="match_parent"
     tools:context="eldad.corem.exercises.lessonThreeB">
 
-    <android.support.v7.widget.Toolbar
+    <TextView
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:background="@color/violet"
         android:theme="?attr/actionBarStyle"
-        android:id="@+id/toolbarViolet"
-        app:subtitle="Violet"
-        app:subtitleTextColor="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarIndigo"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbarRed" />
+        android:id="@+id/textViewViolet"
+        android:text="@string/violet"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIndigo"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewRed" />
 
-    <android.support.v7.widget.Toolbar
+    <TextView
         android:layout_width="89dp"
         android:layout_height="wrap_content"
         android:background="@color/indigo"
         android:theme="?attr/actionBarTheme"
-        android:id="@+id/toolbarIndigo"
-        app:subtitle="Indigo"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarBlue"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbarRed" />
+        android:id="@+id/textViewIndigo"
+        android:text="@string/indigo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlue"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewRed" />
 
-    <android.support.v7.widget.Toolbar
+    <TextView
         android:layout_width="101dp"
         android:layout_height="wrap_content"
         android:background="@color/yellow"
         android:theme="?attr/actionBarTheme"
-        android:id="@+id/toolbarYellow"
-        android:text="yellow"
-        app:subtitle="Yellow"
-        app:subtitleTextColor="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarOrange"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbarRed" />
+        android:id="@+id/textViewYellow"
+        android:text="@string/yellow"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrange"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewRed" />
 
-    <android.support.v7.widget.Toolbar
+    <TextView
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:background="@color/orange"
         android:theme="?attr/actionBarTheme"
-        android:id="@+id/toolbarOrange"
-        app:subtitle="Orange"
-        app:subtitleTextColor="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarRed"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbarRed" />
+        android:id="@+id/textViewOrange"
+        android:text="@string/orange"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRed"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewRed" />
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="67dp"
-        android:layout_height="wrap_content"
+    <TextView
+        android:layout_width="64dp"
+        android:layout_height="24dp"
         android:background="@color/red"
         android:theme="?attr/actionBarTheme"
-        android:id="@+id/toolbarRed"
-        app:subtitle="Red"
-        app:subtitleTextColor="@android:color/black"
+        android:id="@+id/textViewRed"
+        android:text="@string/red"
+        android:textColor="@android:color/black"
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
@@ -69,28 +68,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.28" />
 
-    <android.support.v7.widget.Toolbar
+    <TextView
         android:layout_width="73dp"
         android:layout_height="wrap_content"
         android:background="@color/blue"
         android:theme="?attr/actionBarTheme"
-        android:id="@+id/toolbarBlue"
-        app:subtitle="Blue"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarGreen"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbarRed" />
+        android:id="@+id/textViewBlue"
+        android:text="@string/blue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGreen"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewRed" />
 
-    <android.support.v7.widget.Toolbar
+    <TextView
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:background="@color/green"
         android:theme="?attr/actionBarTheme"
-        android:id="@+id/toolbarGreen"
-        android:title="Green"
-        app:subtitle="Green"
-        app:subtitleTextColor="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarYellow"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbarRed" />
+        android:id="@+id/textViewGreen"
+        android:text="@string/green"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYellow"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewRed" />
 
 </android.support.constraint.ConstraintLayout>
