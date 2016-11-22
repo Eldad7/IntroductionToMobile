@@ -3,13 +3,18 @@ package eldad.corem.exercises;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
+import static android.support.constraint.ConstraintSet.WRAP_CONTENT;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     ListView list;
     @Override
@@ -40,6 +45,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void showMenu(View view) {
+        PopupMenu popup = new PopupMenu(this, view);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.menu);
+        popup.show();
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.about:
+                showAbout();
+                return true;
+            default: return false;
+        }
+    }
+
+    private void showAbout() {
+        Intent intent = new Intent(getBaseContext(), about.class);
+        startActivity(intent);
     }
 
 

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Eldads First App</string>
+    <string name="edit_message">Enter a message - i.e Dogs are the best</string>
+    <string name="button_send">Send!!</string>
+</resources>
