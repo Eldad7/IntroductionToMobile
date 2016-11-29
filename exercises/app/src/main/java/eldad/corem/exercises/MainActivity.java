@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 new ArrayItem("HW#3.a: ConstraintLayout", lessonThree.class),
                 new ArrayItem("HW#3.b: ConstraintLayout", lessonThreeB.class),
                 new ArrayItem("HW#3.c: ConstraintLayout", lessonThreeC.class),
+                new ArrayItem("HW#4: Birthday List", MyBirthdays.class)
         };
 
         ArrayAdapter<ArrayItem> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, hw);

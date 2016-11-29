@@ -23,7 +23,9 @@
         <activity android:name=".lessonThree" />
         <activity android:name=".lessonThreeB" />
         <activity android:name=".lessonThreeC" />
-        <activity android:name=".about"></activity>
+        <activity android:name=".about" />
+        <activity android:name=".MyBirthdays" />
+        <activity android:name=".addBirthday"></activity>
     </application>
 
 </manifest>
