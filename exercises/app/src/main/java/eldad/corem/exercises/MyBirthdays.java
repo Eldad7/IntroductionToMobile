@@ -68,7 +68,7 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        
+
     }
 
     @Override
@@ -85,6 +85,7 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
                 birthdayDBHelper.birthdays.COLUMN_NAME,
                 birthdayDBHelper.birthdays.COLUMN_BIRTHDATE,
                 birthdayDBHelper.birthdays.COLUMN_COMMENT,
+                birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY,
                 birthdayDBHelper.birthdays.COLUMN_DAYSTOBIRTHDAY
         };
         if (type.equalsIgnoreCase("Date"))
@@ -112,9 +113,12 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
         int j;
         try {
             for (j=0; j<count; j++) {
+                System.out.println("IN LOOP ");
                 String name = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_NAME));
-                int daysToBirthday = c.getInt(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_DAYSTOBIRTHDAY));
-                BDkeeper temp = new BDkeeper(name, daysToBirthday);
+                String birthDate = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_BIRTHDATE));
+                String comment = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_COMMENT));
+                String upcomingBirthday = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY));
+                BDkeeper temp = new BDkeeper(name, upcomingBirthday, comment, birthDate);
                 temp.toString();
                 list.add(temp.toString());
                 c.moveToNext();
@@ -126,16 +130,20 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
 
     static class BDkeeper{
         String name;
-        int days;
+        String upcomingBirthday;
+        String comment;
+        String birthDate;
 
-        private BDkeeper(String _name, int _days){
+        private BDkeeper(String _name, String _upcomingBirthday, String _comment, String _birthDate){
             name = _name;
-            days = _days;
+            upcomingBirthday = _upcomingBirthday;
+            comment = _comment;
+            birthDate = _birthDate;
         }
 
         @Override
         public String toString(){
-            return (name + " days to birthday: " + String.valueOf(days));
+            return (name + " - " + upcomingBirthday);
         }
     }
 }

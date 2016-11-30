@@ -14,11 +14,12 @@ import java.security.AccessControlContext;
 public class birthdayDBHelper extends SQLiteOpenHelper {
         // If you change the database schema, you must increment the database version.
     private static final String TEXT_TYPE = " TEXT";
+    private static final String NUMBER_TYPE = " REAL";
     private static final String COMMA_SEP = ",";
     private static final String SQL_CREATE_ENTRIES =
         "CREATE TABLE " + birthdays.TABLE_NAME + " (" + birthdays.COLUMN_NAME + TEXT_TYPE + COMMA_SEP +
                 birthdays.COLUMN_BIRTHDATE + TEXT_TYPE + COMMA_SEP +  birthdays.COLUMN_COMMENT + TEXT_TYPE + COMMA_SEP +
-                birthdays.COLUMN_DAYSTOBIRTHDAY + " integer)";
+                birthdays.COLUMN_DAYSTOBIRTHDAY + NUMBER_TYPE + COMMA_SEP + birthdays.COLUMN_UPCOMINGBIRTHDAY + TEXT_TYPE  +  " )";
 
     private static final String SQL_DELETE_ENTRIES =
         "DROP TABLE IF EXISTS " + birthdays.TABLE_NAME;
@@ -46,6 +47,7 @@ public class birthdayDBHelper extends SQLiteOpenHelper {
         public static final String COLUMN_NAME = "Name";
         public static final String COLUMN_BIRTHDATE = "birthdate";
         public static final String COLUMN_COMMENT = "comment";
+        public static final String COLUMN_UPCOMINGBIRTHDAY = "upcomingBirthday";
         public static final String COLUMN_DAYSTOBIRTHDAY = "daysToBirthday";
     }
 }

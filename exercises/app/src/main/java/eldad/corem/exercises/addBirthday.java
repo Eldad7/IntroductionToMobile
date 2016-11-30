@@ -37,7 +37,7 @@ public class addBirthday extends AppCompatActivity {
 
     public void addToDB(View view) {
         int upcomingYear;
-        long epoch;
+        float epoch;
         String Name = name.getText().toString();
         String Comment = comment.getText().toString();
         int day = dp.getDayOfMonth();
@@ -79,6 +79,7 @@ public class addBirthday extends AppCompatActivity {
         values.put(birthdayDBHelper.birthdays.COLUMN_NAME, Name);
         values.put(birthdayDBHelper.birthdays.COLUMN_BIRTHDATE, BD);
         values.put(birthdayDBHelper.birthdays.COLUMN_COMMENT, Comment);
+        values.put(birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY,upcoming);
         values.put(birthdayDBHelper.birthdays.COLUMN_DAYSTOBIRTHDAY,epoch);
         long newRowId = db.insert(TABLE_NAME, null, values);
         Toast.makeText(this, "Birthday added!", Toast.LENGTH_SHORT).show();
