@@ -16,12 +16,14 @@
     <string name="comment">Comment (i.e Present)</string>
     <string name="name">Name</string>
     <string name="rights">All apps were created by Eldad Corem - All Rights Reserved©</string>
+    <string name="order_by">Order By:</string>
 
     <string-array name="view_array">
-        <item>View by date - ascending</item>
-        <item>View by date - descending</item>
-        <item>View by Name - ascending</item>
-        <item>View by Name - descending</item>
-
+        <item>Ascending</item>
+        <!--<item>Descending</item>-->
+    </string-array>
+    <string-array name="type_array">
+        <item>Date</item>
+        <!--<item>Name</item>-->
     </string-array>
 </resources>

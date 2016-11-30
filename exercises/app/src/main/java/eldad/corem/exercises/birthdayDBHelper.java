@@ -17,8 +17,8 @@ public class birthdayDBHelper extends SQLiteOpenHelper {
     private static final String COMMA_SEP = ",";
     private static final String SQL_CREATE_ENTRIES =
         "CREATE TABLE " + birthdays.TABLE_NAME + " (" + birthdays.COLUMN_NAME + TEXT_TYPE + COMMA_SEP +
-                birthdays.COLUMN_BIRTHDATE + TEXT_TYPE + COMMA_SEP +
-                birthdays.COLUMN_COMMENT + TEXT_TYPE + " )";
+                birthdays.COLUMN_BIRTHDATE + TEXT_TYPE + COMMA_SEP +  birthdays.COLUMN_COMMENT + TEXT_TYPE + COMMA_SEP +
+                birthdays.COLUMN_DAYSTOBIRTHDAY + " integer)";
 
     private static final String SQL_DELETE_ENTRIES =
         "DROP TABLE IF EXISTS " + birthdays.TABLE_NAME;
@@ -43,8 +43,9 @@ public class birthdayDBHelper extends SQLiteOpenHelper {
 
     public static class birthdays implements BaseColumns {
         public static final String TABLE_NAME = "birthdays";
-        public static final String COLUMN_NAME = "name";
+        public static final String COLUMN_NAME = "Name";
         public static final String COLUMN_BIRTHDATE = "birthdate";
         public static final String COLUMN_COMMENT = "comment";
+        public static final String COLUMN_DAYSTOBIRTHDAY = "daysToBirthday";
     }
 }
