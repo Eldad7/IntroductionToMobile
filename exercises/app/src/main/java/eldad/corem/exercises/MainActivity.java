@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import static android.support.constraint.ConstraintSet.WRAP_CONTENT;
 
-public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
+public class MainActivity extends AppCompatActivity{
 
     ListView list;
     @Override
@@ -47,29 +47,6 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             }
         });
     }
-
-    public void showMenu(View view) {
-        PopupMenu popup = new PopupMenu(this, view);
-        popup.setOnMenuItemClickListener(this);
-        popup.inflate(R.menu.menu);
-        popup.show();
-    }
-
-    @Override
-    public boolean onMenuItemClick(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.about:
-                showAbout();
-                return true;
-            default: return false;
-        }
-    }
-
-    private void showAbout() {
-        Intent intent = new Intent(getBaseContext(), about.class);
-        startActivity(intent);
-    }
-
 
     static class ArrayItem {
         private Class activity;

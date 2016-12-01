@@ -34,21 +34,6 @@
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="0dp" />
 
-    <ImageButton
-        android:layout_width="55dp"
-        android:layout_height="56dp"
-        app:srcCompat="@android:drawable/ic_menu_preferences"
-        android:id="@+id/imageButton"
-        android:onClick="showMenu"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintRight_toRightOf="@+id/toolbar"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/settings" />
-
-
     <ListView
         android:id="@+id/list"
         android:layout_width="343dp"

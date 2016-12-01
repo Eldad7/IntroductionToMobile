@@ -36,54 +36,56 @@ public class addBirthday extends AppCompatActivity {
     }
 
     public void addToDB(View view) {
-        int upcomingYear;
-        float epoch;
-        String Name = name.getText().toString();
-        String Comment = comment.getText().toString();
-        int day = dp.getDayOfMonth();
-        int month = dp.getMonth()+1;
-        int year = dp.getYear();
-        String BD = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(year);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        SimpleDateFormat sdf = new SimpleDateFormat ("dd/MM/yyyy");
-        Date date = new Date();
-        Date currentDate = new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(currentDate);
-        int currentMonth = 1 + cal.get(Calendar.MONTH);
-        if (month > currentMonth) {
-            upcomingYear = cal.get(Calendar.YEAR);
-        }
-        else if (currentMonth > month) {
-           upcomingYear = cal.get(Calendar.YEAR) + 1;
+        if (!name.getText().toString().equals("")) {
+            int upcomingYear;
+            float epoch;
+            String Name = name.getText().toString();
+            String Comment = comment.getText().toString();
+            int day = dp.getDayOfMonth();
+            int month = dp.getMonth() + 1;
+            int year = dp.getYear();
+            String BD = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(year);
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            Date date = new Date();
+            Date currentDate = new Date();
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(currentDate);
+            int currentMonth = 1 + cal.get(Calendar.MONTH);
+            if (month > currentMonth) {
+                upcomingYear = cal.get(Calendar.YEAR);
+            } else if (currentMonth > month) {
+                upcomingYear = cal.get(Calendar.YEAR) + 1;
+            } else {
+                if (cal.get(Calendar.DAY_OF_MONTH) > day) {
+                    upcomingYear = cal.get(Calendar.YEAR) + 1;
+                } else {
+                    upcomingYear = cal.get(Calendar.YEAR);
+                }
+            }
+
+            String upcoming = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(upcomingYear);
+            try {
+                date = sdf.parse(upcoming);
+                System.out.println(date + " - " + currentDate);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            epoch = (date.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
+            System.out.println(epoch);
+            ContentValues values = new ContentValues();
+            values.put(birthdayDBHelper.birthdays.COLUMN_NAME, Name);
+            values.put(birthdayDBHelper.birthdays.COLUMN_BIRTHDATE, BD);
+            values.put(birthdayDBHelper.birthdays.COLUMN_COMMENT, Comment);
+            values.put(birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY, upcoming);
+            values.put(birthdayDBHelper.birthdays.COLUMN_DAYSTOBIRTHDAY, epoch);
+            long newRowId = db.insert(TABLE_NAME, null, values);
+            Toast.makeText(this, "Birthday added!", Toast.LENGTH_SHORT).show();
+            name.setText("");
+            comment.setText("");
         }
         else{
-            if (cal.get(Calendar.DAY_OF_MONTH) > day){
-                upcomingYear = cal.get(Calendar.YEAR)+1;
-            }
-            else{
-                upcomingYear = cal.get(Calendar.YEAR);
-            }
+            Toast.makeText(this, "You must pick a name!", Toast.LENGTH_SHORT).show();
         }
-
-        String upcoming = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(upcomingYear);
-        try {
-            date = sdf.parse(upcoming);
-            System.out.println(date + " - " + currentDate);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        epoch = (date.getTime() - currentDate.getTime()) / (1000*60*60*24);
-        System.out.println(epoch);
-        ContentValues values = new ContentValues();
-        values.put(birthdayDBHelper.birthdays.COLUMN_NAME, Name);
-        values.put(birthdayDBHelper.birthdays.COLUMN_BIRTHDATE, BD);
-        values.put(birthdayDBHelper.birthdays.COLUMN_COMMENT, Comment);
-        values.put(birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY,upcoming);
-        values.put(birthdayDBHelper.birthdays.COLUMN_DAYSTOBIRTHDAY,epoch);
-        long newRowId = db.insert(TABLE_NAME, null, values);
-        Toast.makeText(this, "Birthday added!", Toast.LENGTH_SHORT).show();
-        name.setText("");
-        comment.setText("");
     }
 }

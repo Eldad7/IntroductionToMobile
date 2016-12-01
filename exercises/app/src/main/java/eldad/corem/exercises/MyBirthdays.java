@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
-
 import java.util.ArrayList;
 
 public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnItemSelectedListener {
@@ -19,6 +18,7 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
     birthdayDBHelper dbHelper;
     ListView listView;
     ArrayAdapter<String> adapter1;
+    static BDkeeper popUpHelper[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,22 +41,38 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
         viewAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerType.setAdapter(viewAdapter);
         dbHelper = new birthdayDBHelper(this);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                String clicked = (String) listView.getItemAtPosition(position);
+                int i=0;
+                while(i<list.size()){
+                    System.out.println(clicked);
+                    if (clicked.equals(popUpHelper[i].toString())){
+                        Intent intent = new Intent(getBaseContext(), birthdayInfo.class);
+                        System.out.println("i is " + i);
+                        intent.putExtra("index", i);
+                        startActivity(intent);
+                        break;
+                    }
+                    else {
+                        i++;
+                    }
+                }
+            }
+        });
     }
-
 
 
 
     public void addBirthday(View view) {
         Intent intent = new Intent(getBaseContext(), addBirthday.class);
         startActivity(intent);
-        //listMaker();
-        //adapter1.notifyDataSetChanged();
     }
 
     @Override
     protected void onResume(){
         super.onResume();
-        adapter1.clear();
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -77,7 +93,7 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
     }
 
     private void listMaker(){
-        System.out.println("Starting ");
+        list.clear();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String order = spinner.getSelectedItem().toString();
         String type = spinnerType.getSelectedItem().toString();
@@ -109,18 +125,16 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
 
         c.moveToFirst();
         int count=c.getCount();
-        System.out.println("Count - " + count);
+        popUpHelper = new BDkeeper[count];
         int j;
         try {
             for (j=0; j<count; j++) {
-                System.out.println("IN LOOP ");
                 String name = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_NAME));
                 String birthDate = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_BIRTHDATE));
                 String comment = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_COMMENT));
                 String upcomingBirthday = c.getString(c.getColumnIndexOrThrow(birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY));
-                BDkeeper temp = new BDkeeper(name, upcomingBirthday, comment, birthDate);
-                temp.toString();
-                list.add(temp.toString());
+                popUpHelper[j] = new BDkeeper(name, upcomingBirthday, comment, birthDate);
+                list.add(popUpHelper[j].toString());
                 c.moveToNext();
             }
         } finally {
@@ -133,17 +147,36 @@ public class MyBirthdays extends AppCompatActivity  implements AdapterView.OnIte
         String upcomingBirthday;
         String comment;
         String birthDate;
+        ArrayList<String> al;
 
         private BDkeeper(String _name, String _upcomingBirthday, String _comment, String _birthDate){
             name = _name;
             upcomingBirthday = _upcomingBirthday;
-            comment = _comment;
+            if (_comment.equals(""))
+                comment = "No comment provided";
+            else {
+                comment = _comment;
+            }
             birthDate = _birthDate;
+            al = new ArrayList<>();
+            al.add(name);
+            al.add(birthDate);
+            al.add(upcomingBirthday);
+            al.add(comment);
         }
+
+        public ArrayList<String> getInfo(){
+            return al;
+        }
+
 
         @Override
         public String toString(){
             return (name + " - " + upcomingBirthday);
         }
+    }
+
+    public static BDkeeper getBDkeeper(int index){
+        return popUpHelper[index];
     }
 }
