@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-
 public class birthdayInfo extends AppCompatActivity {
     TextView name;
     TextView birthdate;

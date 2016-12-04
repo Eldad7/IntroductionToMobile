@@ -32,7 +32,6 @@ public class addBirthday extends AppCompatActivity {
         comment = (EditText) findViewById(R.id.comment);
         dp = (DatePicker) findViewById(R.id.datePicker);
         dbHelper = new birthdayDBHelper(this);
-
     }
 
     public void addToDB(View view) {
@@ -67,18 +66,15 @@ public class addBirthday extends AppCompatActivity {
             String upcoming = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(upcomingYear);
             try {
                 date = sdf.parse(upcoming);
-                System.out.println(date + " - " + currentDate);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-            epoch = (date.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
-            System.out.println(epoch);
             ContentValues values = new ContentValues();
             values.put(birthdayDBHelper.birthdays.COLUMN_NAME, Name);
             values.put(birthdayDBHelper.birthdays.COLUMN_BIRTHDATE, BD);
             values.put(birthdayDBHelper.birthdays.COLUMN_COMMENT, Comment);
             values.put(birthdayDBHelper.birthdays.COLUMN_UPCOMINGBIRTHDAY, upcoming);
-            values.put(birthdayDBHelper.birthdays.COLUMN_DAYSTOBIRTHDAY, epoch);
+            values.put(birthdayDBHelper.birthdays.COLUMN_EPOCH, date.getTime());
             long newRowId = db.insert(TABLE_NAME, null, values);
             Toast.makeText(this, "Birthday added!", Toast.LENGTH_SHORT).show();
             name.setText("");
