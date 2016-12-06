@@ -8,11 +8,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lessonTwo"
-            android:label="Eldad's Simple Calculator"
-            />
-        <activity android:name=".calculate"
-            android:label="Result"/>
+        <activity
+            android:name=".lessonTwo"
+            android:label="Eldad&apos;s Simple Calculator" />
+        <activity
+            android:name=".calculate"
+            android:label="Result" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
@@ -23,18 +24,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lessonThree"
-            android:label="Constraint layouts"/>
-        <activity android:name=".lessonThreeB"
-            android:label="Constraint layouts"/>
-        <activity android:name=".lessonThreeC"
-            android:label="Constraint layouts"/>
-        <activity android:name=".MyBirthdays"
-            android:label="Birthdays application"/>
-        <activity android:name=".addBirthday"
-            android:label="Add a birthday"/>
-        <activity android:name=".birthdayInfo"
-            android:label="Details"/>
+        <activity
+            android:name=".lessonThree"
+            android:label="Constraint layouts" />
+        <activity
+            android:name=".lessonThreeB"
+            android:label="Constraint layouts" />
+        <activity
+            android:name=".lessonThreeC"
+            android:label="Constraint layouts" />
+        <activity
+            android:name=".MyBirthdays"
+            android:label="Birthdays application" />
+        <activity
+            android:name=".addBirthday"
+            android:label="Add a birthday" />
+        <activity
+            android:name=".birthdayInfo"
+            android:label="Details" />
+        <activity
+            android:name=".MySettingsActivity"
+            android:label="Settings" />
+        <activity android:name=".lessonSix"></activity>
     </application>
 
 </manifest>
