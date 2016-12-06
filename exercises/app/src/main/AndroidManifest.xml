@@ -45,7 +45,10 @@
         <activity
             android:name=".MySettingsActivity"
             android:label="Settings" />
-        <activity android:name=".lessonSix"></activity>
+        <activity
+            android:name=".lessonSix"
+            android:label="CustomView"
+            />
     </application>
 
 </manifest>

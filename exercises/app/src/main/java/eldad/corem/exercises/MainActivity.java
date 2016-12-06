@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity{
                 new ArrayItem("HW#3.b: ConstraintLayout", lessonThreeB.class),
                 new ArrayItem("HW#3.c: ConstraintLayout", lessonThreeC.class),
                 new ArrayItem("HW#4: Birthday List", MyBirthdays.class),
-                new ArrayItem("HW#5: Settings+Transitions", MySettingsActivity.class)
+                new ArrayItem("HW#5: Settings+Transitions", MySettingsActivity.class),
+                new ArrayItem("HW#6: Simple custom view#1", lessonSix.class)
         };
         flag=true;
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
