@@ -4,28 +4,30 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class lessonSixView extends View {
+/**
+ Created by Eldad Corem on 07/12/2016.
+ */
 
-    private Paint paint = new Paint();
+public class lessonSixViewB extends View {
+    Paint paint = new Paint();
     Paint paintB = new Paint();
 
-    public lessonSixView(Context context) {
+    public lessonSixViewB(Context context) {
         super(context);
         init();
     }
 
-    public lessonSixView(Context context, AttributeSet attrs) {
+    public lessonSixViewB(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public lessonSixView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public lessonSixViewB(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
@@ -33,6 +35,7 @@ public class lessonSixView extends View {
     private void init() {
         paint.setColor(R.color.indigo);
         paint.setAntiAlias(true);
+        this.setRotation(-15);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)

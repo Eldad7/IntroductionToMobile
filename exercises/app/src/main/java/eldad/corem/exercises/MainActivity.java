@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity{
                 new ArrayItem("HW#3.c: ConstraintLayout", lessonThreeC.class),
                 new ArrayItem("HW#4: Birthday List", MyBirthdays.class),
                 new ArrayItem("HW#5: Settings+Transitions", MySettingsActivity.class),
-                new ArrayItem("HW#6: Simple custom view#1", lessonSix.class)
+                new ArrayItem("HW#6: Simple custom view", lessonSix.class)
         };
         flag=true;
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public void onResume(){
         super.onResume();
-        if (flag!=true)
+        if (!flag)
             overridePendingTransition(resumeToActivity, resumeFromActivity);
         else{
             flag=false;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity{
         private Class activity;
         private String label;
 
-        public ArrayItem(String label, Class activity) {
+        private ArrayItem(String label, Class activity) {
             this.label = label;
             this.activity = activity;
         }
