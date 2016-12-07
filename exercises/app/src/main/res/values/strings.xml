@@ -18,6 +18,8 @@
     <string name="rights">All apps were created by Eldad Corem - All Rights Reserved©</string>
     <string name="order_by">Order By:</string>
     <string name="transitions">Transitions</string>
+    <string name="scene_6a">Scene 6A</string>
+    <string name="scene_6b">Scene 6B</string>
 
     <string-array name="view_array">
         <item>Ascending</item>
