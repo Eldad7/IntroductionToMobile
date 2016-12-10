@@ -66,7 +66,12 @@ public class MainActivity extends AppCompatActivity{
         else{
             flag=false;
         }
-        setTransition(prefs);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                setTransition(prefs);
+            }
+        }).start();
     }
 
     static class ArrayItem {
