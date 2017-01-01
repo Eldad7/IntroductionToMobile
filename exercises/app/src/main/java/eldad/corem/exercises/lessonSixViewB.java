@@ -35,7 +35,6 @@ public class lessonSixViewB extends View {
     private void init() {
         paint.setColor(R.color.indigo);
         paint.setAntiAlias(true);
-        this.setRotation(-15);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -56,5 +55,6 @@ public class lessonSixViewB extends View {
         paintB.setColor(Color.YELLOW);
         paintB.setAntiAlias(true);
         canvas.drawOval(322,2,368,98, paintB);
+        canvas.rotate(-15 );
     }
 }

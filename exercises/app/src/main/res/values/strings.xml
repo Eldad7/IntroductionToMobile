@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EldadsHWSelector</string>
+    <string name="app_name">HW-Eldad</string>
     <string name="title_activity_main">HW Selector</string>
     <string name="assignments">Assignments</string>
     <string name="green">Green</string>
