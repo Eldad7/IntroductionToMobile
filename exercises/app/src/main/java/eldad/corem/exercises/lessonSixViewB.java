@@ -40,6 +40,7 @@ public class lessonSixViewB extends View {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDraw(Canvas canvas){
+        canvas.rotate(-15,400,0);
         canvas.drawLine(50,0,50,100, paint);
         canvas.drawLine(50,50,100,50, paint);
         canvas.drawLine(100,0,100,100, paint);
@@ -55,6 +56,6 @@ public class lessonSixViewB extends View {
         paintB.setColor(Color.YELLOW);
         paintB.setAntiAlias(true);
         canvas.drawOval(322,2,368,98, paintB);
-        canvas.rotate(-15 );
+
     }
 }
